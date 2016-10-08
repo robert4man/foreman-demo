@@ -18,7 +18,7 @@ This is a reference architecture for a Foreman/Hiera demo at Ohio Linux Fest.
 ```
 git clone https://github.com/robert4man/foreman-demo.git
 cd foreman-demo
-vagrant up master --provider=virtualbox
+vagrant up --provider=virtualbox
 ```
 
 You *may* need to run puppet a second time. If so then you will need to
