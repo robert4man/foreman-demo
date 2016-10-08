@@ -18,13 +18,19 @@ This is a reference architecture for a Foreman/Hiera demo at Ohio Linux Fest.
 ```
 git clone https://github.com/robert4man/foreman-demo.git
 cd foreman-demo
-vagrant up master
-# May need to run puppet a second time
+vagrant up master --provider=virtualbox
+```
+
+You *may* need to run puppet a second time. If so then you will need to
+bring the client up separately.
+```
 vagrant master --provision
-vagrant up client
-vagrant ssh master
-sudo su -
-r10k deploy environment --puppetfile
+vagrant up client --provider=virtualbox
+```
+
+Manually execute r10k:
+```
+vagrant ssh master "sudo r10k deploy environment --puppetfile --verbose"
 ```
 
 You should be able to access the web interface for Foreman using
