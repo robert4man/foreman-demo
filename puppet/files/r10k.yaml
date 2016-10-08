@@ -1,0 +1,8 @@
+---
+:cachedir: /var/cache/r10k
+:sources:
+  puppet:
+    basedir: /etc/puppet/environments
+    prefix: false
+    remote: ssh://git@git.oit.ohio.edu:7999/syspup/controller.git
+
