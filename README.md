@@ -30,7 +30,7 @@ vagrant up client --provider=virtualbox
 
 Manually execute r10k:
 ```
-vagrant ssh master "sudo r10k deploy environment --puppetfile --verbose"
+vagrant ssh master -c "sudo r10k deploy environment --puppetfile --verbose"
 ```
 
 You should be able to access the web interface for Foreman using
