@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+
+
 require 'puppet'
 require 'vagrant-puppet-install'
 require 'vagrant-r10k'
